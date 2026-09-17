@@ -38,7 +38,7 @@ user = Client(
     "session_923294013197",
     api_id=API_ID,
     api_hash=API_HASH,
-    phone_number="+254717",
+    phone_number="+254717702563",
     workers=1000
 ) # @nativecodes
 
