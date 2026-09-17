@@ -5,7 +5,7 @@ import logging
 import aiofiles
 from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from pyrogram import Client, filters
+from pyrogram import Client, filters, compose
 from pyrogram.errors import (
     UserAlreadyParticipant,
     InviteHashExpired,
@@ -501,5 +501,4 @@ async def clean_cmd(client, message):
 
 if __name__ == "__main__":
     setup_scr_handler(app)
-    user.start()
-    app.run()
+    compose([app, user])
