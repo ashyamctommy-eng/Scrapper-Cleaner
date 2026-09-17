@@ -181,7 +181,7 @@ async def send_results(client, message, unique_messages, duplicates_removed, sou
 
 async def get_user_link(message):
     if message.from_user is None:
-        return '<a href="https://t.me/ScrapperxCleanerBot">Scrapper x Cleaner</a>'
+        return '<a href="https://t.me/hpskcheckerbot">Scrapper x Cleaner</a>'
     else:
         user_first_name = message.from_user.first_name
         user_last_name = message.from_user.last_name or ""
@@ -385,7 +385,7 @@ async def scrape_messages_task(client, channel_username, limit, bot_client, mess
 @app.on_message(filters.command("start", prefixes=["/", ".", ",", "!"]) & (filters.group | filters.private))
 async def start(client, message):
     buttons = [
-        [InlineKeyboardButton("Update Channel", url="https://t.me/KamalxKiller"), InlineKeyboardButton("Dev👨‍💻", user_id=5248903529)]
+        [InlineKeyboardButton("Update Channel", url="https://t.me/Poriot_ke"), InlineKeyboardButton("Dev👨‍💻", user_id=5541778617]
     ]
     await client.send_message(
         message.chat.id,
