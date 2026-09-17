@@ -385,7 +385,7 @@ async def scrape_messages_task(client, channel_username, limit, bot_client, mess
 @app.on_message(filters.command("start", prefixes=["/", ".", ",", "!"]) & (filters.group | filters.private))
 async def start(client, message):
     buttons = [
-        [InlineKeyboardButton("Update Channel", url="https://t.me/Poriot_ke"), InlineKeyboardButton("Dev👨‍💻", user_id=5541778617]
+        [InlineKeyboardButton("Update Channel", url="https://t.me/Poriot_ke"), InlineKeyboardButton("Dev👨‍💻", user_id=5541778617)]
     ]
     await client.send_message(
         message.chat.id,
