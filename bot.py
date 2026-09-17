@@ -20,6 +20,7 @@ from config import (
     BOT_TOKEN,
     ADMIN_LIMIT,
     ADMIN_IDS,
+    SESSION_STRING,
     DEFAULT_LIMIT
 ) # @nativecodes
 
@@ -35,12 +36,13 @@ app = Client(
 )
 
 user = Client(
-    "session_923294013197",
+    "user_session",
     api_id=API_ID,
     api_hash=API_HASH,
-    phone_number="+254717702563",
+    session_string=SESSION_STRING,
     workers=1000
-) # @nativecodes
+)
+# @nativecodes
 
 START_MESSAGE = """
 『💳 𝐂𝐑𝐄𝐃𝐈𝐓 𝐂𝐀𝐑𝐃 𝐒𝐂𝐑𝐀𝐏𝐄𝐑 💳』
