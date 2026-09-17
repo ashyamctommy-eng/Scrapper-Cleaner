@@ -73,7 +73,7 @@ async def scrape_messages(client, channel_username, limit, start_number=None, ba
 
     logger.info(f"Starting to scrape messages from {channel_username} with limit {limit}")
 
-    async for message in user.search_messages(channel_username):
+    async for message in user.get_chat_history(channel_username):
         if count >= limit:
             break
         text = message.text or message.caption
